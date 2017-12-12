@@ -1,0 +1,10 @@
+{
+    "env": {
+        "es6": true,        // We are writing ES6 code
+        "browser": true     // for the browser
+    },
+    "extends": "airbnb-base",
+    "rules": {
+        "no-trailing-spaces": ["off", "always"]
+    }
+}
