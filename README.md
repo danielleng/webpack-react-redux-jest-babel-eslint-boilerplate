@@ -122,7 +122,7 @@ src\
 
 ## Building
 
-For the build step, Webpack first lints all files with the `.jsx` extension before transpiling the code with Babel. Any linting errors or transpile errors will prevent the build from completing.   
+For the build step, Webpack first lints all files with the `.jsx` extension before transpiling the code with Babel, and minifying with UglifyJS. Any linting errors or transpile errors will prevent the build from completing.   
 
 You can run a one-off build with:
 ```
