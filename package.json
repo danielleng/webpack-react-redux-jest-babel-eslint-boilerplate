@@ -11,9 +11,9 @@
   ],
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --open",
-    "watch": "webpack-dev-server --open",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "watch": "webpack-dev-server --open --config webpack.dev.js",
     "test": "jest --config .jestrc.json",
     "test-watch": "jest --config .jestrc.json --watchAll"
   },
@@ -39,6 +39,7 @@
     "jest": "^21.2.1",
     "uglifyjs-webpack-plugin": "^1.1.2",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^2.9.7",
+    "webpack-merge": "^4.1.1"
   }
 }

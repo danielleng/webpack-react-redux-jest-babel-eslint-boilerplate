@@ -39,7 +39,9 @@ These should all work and report zero errors in the build process if everything 
 If you have some experience using NPM and Webpack, you can peruse the following files and integrate them to your project:
 ```
 package.json            // NPM config
-webpack.config.js       // Webpack config
+webpack.common.js       // Webpack common configs
+webpack.dev.js          // Webpack development-specific configs
+webpack.prod.js         // Webpack production-specific configs
 .babelrc                // Babel config
 .eslintrc.json          // ESLint config
 .jestrc.json            // Jest config
@@ -53,7 +55,12 @@ To reduce clutter in the `package.json` file and standardize configuration for a
 
 ### Webpack
 
-Webpack's configuration file is `webpack.config.js` and uses Webpack 3 rules. You can change the webpack-dev-server (such as port number) configuration here.
+Webpack's configuration file is split into 3 parts. This follows the official Getting Started guide on Webpack: https://webpack.js.org/guides/production/
+1. `webpack.common.js` contains configuration options that is common to both development and production environments.
+2. `webpack.dev.js` contains configs for a development environment.
+3. `webpack.prod.js` contains configs for a production build. 
+
+They are combined using the `webpack-merge` utility.
 
 ### Babel
 
@@ -163,6 +170,7 @@ This boilerplate is not complete. The following features are planned:
 2. Add asset management in Webpack.
 3. Provide examples of hot module reloading.
 4. Support for React.
+5. Universal config file.
 
 ## Authors
 
