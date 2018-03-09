@@ -1,8 +1,8 @@
-# Webpack-Jest-Babel-ESLint Boilerplate
+# Webpack-React-Redux-Jest-Babel-ESLint Boilerplate
 
-A front-end web project boilerplate utilizing the Webpack bundler configured with Jest, ESLint and Babel.   
+A front-end web project boilerplate utilizing the Webpack bundler configured with React, Redux, Jest, Babel and ESLint. 
 
-ESLint is configured with 'ES2015' and 'airbnb' codestyle presets, and the entire build system is configured to support ES6-style modules with `import` and `export`. 
+ESLint is configured with 'ES2015' and 'plugin:react/recommended' codestyle presets, and the entire build system is configured to support ES6-style modules with `import` and `export`. 
 
 ## Getting Started
 You should have NPM installed in your system before proceeding: https://www.npmjs.com/
@@ -57,14 +57,14 @@ To reduce clutter in the `package.json` file and standardize configuration for a
 
 Webpack's configuration file is split into 3 parts. This follows the official Getting Started guide on Webpack: https://webpack.js.org/guides/production/
 1. `webpack.common.js` contains configuration options that is common to both development and production environments.
-2. `webpack.dev.js` contains configs for a development environment.
-3. `webpack.prod.js` contains configs for a production build. 
+2. `webpack.dev.js` contains configs for a React development environment.
+3. `webpack.prod.js` contains configs for a production-ready React build. 
 
 They are combined using the `webpack-merge` utility.
 
 ### Babel
 
-Babel's configuration file is `.babelrc`. The "airbnb" and "es2015" presets are configured here. If you plan to use other presets, you will need to install them first via `npm install --save-dev` before adding it to the config.
+Babel's configuration file is `.babelrc`. The "plugin:react/recommended" and "es2015" presets are configured here. If you plan to use other presets, you will need to install them first via `npm install --save-dev` before adding it to the config.
 
 ### ESLint
 
@@ -103,6 +103,8 @@ import createMyModule from './myModule.jsx';
 const a = createMyModule();
 a.init();
 ```
+
+An example React component is included, aptly named `MyComponent.jsx`.
 
 The folder structure for your project is flexible, as Webpack is already configured to look for source files in the `./src` folder regardless of subdirectories.   
 
@@ -169,8 +171,7 @@ This boilerplate is not complete. The following features are planned:
 1. Automatically run Jest tests with Webpack.
 2. Add asset management in Webpack.
 3. Provide examples of hot module reloading.
-4. Support for React.
-5. Universal config file.
+4. ~~Support for React.~~ (*done*)
 
 ## Authors
 

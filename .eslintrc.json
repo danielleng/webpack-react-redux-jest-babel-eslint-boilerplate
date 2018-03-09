@@ -3,8 +3,14 @@
         "es6": true,        // We are writing ES6 code
         "browser": true     // for the browser
     },
-    "extends": "airbnb-base",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
     "rules": {
         "no-trailing-spaces": ["off", "always"]
+    },
+    "parserOptions": {
+        "sourceType": "module"
     }
 }
