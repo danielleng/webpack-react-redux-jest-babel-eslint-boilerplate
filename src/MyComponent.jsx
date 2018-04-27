@@ -1,4 +1,5 @@
 import React from 'react'
+import landingImage from './img/landing-image.jpg'
 
 class MyComponent extends React.Component {
   constructor() {
@@ -8,6 +9,7 @@ class MyComponent extends React.Component {
   render() {
     return (
       <div>
+        <img src={landingImage} alt="landing-image" title="" />
         <p>Hello, my name is Dave</p>
       </div>
     )

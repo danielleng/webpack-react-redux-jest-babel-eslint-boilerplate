@@ -169,7 +169,7 @@ Tests should follow Jest's default conventions and best practices, e.g. all test
 This boilerplate is not complete. The following features are planned:   
 
 1. Automatically run Jest tests with Webpack.
-2. Add asset management in Webpack.
+2. ~~Add asset management in Webpack.~~ (*done*)
 3. Provide examples of hot module reloading.
 4. ~~Support for React.~~ (*done*)
 
