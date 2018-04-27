@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import "normalize.css";
+
 // Import Javascript module
 import createMyModule from './myModule.jsx';
 
